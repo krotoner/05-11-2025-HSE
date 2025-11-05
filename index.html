@@ -13,6 +13,10 @@
             margin: 20px;
             line-height: 1.6;
             text-shadow: 0 0 8px #00fff9;
+            transition: background-color 0.5s ease;
+        }
+        body.alternate-bg {
+            background-color: #1a0033;
         }
         header {
             text-align: center;
@@ -95,6 +99,27 @@
             color: #088;
             text-shadow: 0 0 4px #008888;
         }
+        /* Кнопка */
+        .btn-toggle-bg {
+            display: block;
+            margin: 20px auto 40px auto;
+            padding: 12px 30px;
+            background: #00fff9;
+            border: none;
+            border-radius: 30px;
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 1.1em;
+            color: #001111;
+            cursor: pointer;
+            box-shadow: 0 0 20px #00fff9;
+            transition: background 0.3s ease, color 0.3s ease;
+            text-transform: uppercase;
+        }
+        .btn-toggle-bg:hover {
+            background: #22ffff;
+            color: #000;
+        }
     </style>
 </head>
 <body>
@@ -102,6 +127,7 @@
         <h1>Архип Иванович Куинджи</h1>
         <p>Русский живописец, мастер пейзажа</p>
     </header>
+    <button class="btn-toggle-bg" id="toggleBgBtn">Сменить фон</button>
     <article>
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Kuinji_01.jpg" alt="Архип Куинджи - портрет" />
         <h2>Краткая биография</h2>
@@ -119,5 +145,12 @@
     <footer>
         © 2025 Информация о Архипе Куинджи
     </footer>
+    <script>
+        // TypeScript-компилированный JS для смены фона по кнопке
+        const toggleBtn = document.getElementById('toggleBgBtn');
+        toggleBtn?.addEventListener('click', () => {
+            document.body.classList.toggle('alternate-bg');
+        });
+    </script>
 </body>
 </html>
