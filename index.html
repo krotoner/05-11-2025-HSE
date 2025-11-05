@@ -1,41 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Архип Куинджи - Художник</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Orbitron', Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #0ff;
             margin: 20px;
-            background-color: #fafafa;
-            color: #333;
+            line-height: 1.6;
+            text-shadow: 0 0 8px #00fff9;
         }
         header {
             text-align: center;
             margin-bottom: 30px;
+            border-bottom: 2px solid #00fff9;
+            padding-bottom: 10px;
         }
         header h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin: 0;
+            color: #00fff9;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            text-shadow:
+                0 0 5px #0ff,
+                0 0 20px #0ff,
+                0 0 30px #0ff;
+        }
+        header p {
+            font-size: 1.25em;
+            color: #22ffff;
+            text-shadow: 0 0 6px #22ffff;
         }
         img {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto 20px;
-            border-radius: 8px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #00ffff;
+            border: 1px solid #0ff;
+            filter: drop-shadow(0 0 5px #00ffff);
         }
         article {
             max-width: 800px;
             margin: 0 auto;
+            background: #111;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow:
+                0 0 10px #00fff9,
+                0 0 30px #035;
+        }
+        h2 {
+            color: #00ffff;
+            text-shadow: 0 0 8px #0ff;
+            border-bottom: 1px solid #00ffff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            background: linear-gradient(90deg, #00fff9, #004d4d);
+            margin: 8px 0;
+            padding: 8px 15px;
+            border-radius: 7px;
+            box-shadow: 0 0 10px #00fff9 inset;
+            color: #001111;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            transition: background 0.3s ease;
+        }
+        ul li:hover {
+            background: linear-gradient(90deg, #22ffff, #008080);
+            color: #e0ffff;
+            box-shadow: 0 0 15px #22ffff inset;
+            cursor: pointer;
+        }
+        p {
+            color: #a0fff9;
+            text-shadow: 0 0 6px #00cccc;
         }
         footer {
             text-align: center;
             margin-top: 40px;
-            font-size: 0.9em;
-            color: #666;
+            font-size: 0.85em;
+            color: #088;
+            text-shadow: 0 0 4px #008888;
         }
     </style>
 </head>
@@ -45,15 +103,15 @@
         <p>Русский живописец, мастер пейзажа</p>
     </header>
     <article>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Kuinji_01.jpg" alt="Архип Куинджи - портрет">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Kuinji_01.jpg" alt="Архип Куинджи - портрет" />
         <h2>Краткая биография</h2>
         <p>Архип Иванович Куинджи (1841–1910) — выдающийся русский художник, известный своими пейзажами, в которых он мастерски играл светом и цветом. Родился на Украине. Учился в Императорской Академии художеств в Санкт-Петербурге.</p>
         <h2>Известные произведения</h2>
         <ul>
-            <li>"Березовая роща"</li>
-            <li>"Лунная ночь на Днепре"</li>
-            <li>"Вечерняя заря"</li>
-            <li>"Крым" (серия пейзажей)</li>
+            <li>Березовая роща</li>
+            <li>Лунная ночь на Днепре</li>
+            <li>Вечерняя заря</li>
+            <li>Крым (серия пейзажей)</li>
         </ul>
         <h2>Вклад в искусство</h2>
         <p>Куинджи внёс значительный вклад в развитие русской пейзажной живописи, экспериментируя с освещением и атмосферами, создавая поразительные по эффекту картины. Его работы оказали влияние на последующие поколения художников.</p>
